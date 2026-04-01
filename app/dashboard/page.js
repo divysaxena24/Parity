@@ -46,7 +46,7 @@ export default async function DashboardOverview({ searchParams }) {
   const totalWon = claims.reduce((acc, curr) => acc + (curr.status === 'APPROVED' ? curr.amount : 0), 0);
   
   // 4b. Fetch Full User and Stats
-  const [user] = await sql`SELECT * FROM users WHERE clerk_id = ${userId} LIMIT 1`;
+  const [user] = await sql`SELECT * FROM users WHERE id = ${userId} LIMIT 1`;
   const [scoreCount] = await sql`SELECT count(*) FROM scores WHERE user_id = ${userId}`;
   const [latestScore] = await sql`SELECT score FROM scores WHERE user_id = ${userId} ORDER BY date_played DESC LIMIT 1`;
 
