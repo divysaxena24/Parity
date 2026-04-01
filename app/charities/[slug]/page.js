@@ -101,7 +101,7 @@ export default function CharityDetail() {
                      <Goal icon={<Target className="text-emerald-500" />} text="Direct environmental impact through verified reforestation." />
                      <Goal icon={<Globe className="text-emerald-500" />} text="Improving lives across 25+ countries globally." />
                      <Goal icon={<CheckCircle2 className="text-emerald-500" />} text="Transparent reporting and direct funding models." />
-                     <Goal icon={<Users iconSize={20} className="text-emerald-500" />} text="Community-led management for sustainable growth." />
+                     <Goal icon={<UsersIcon iconSize={20} className="text-emerald-500" />} text="Community-led management for sustainable growth." />
                   </div>
 
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white mt-16 sm:mt-20 mb-8 px-2 border-l-4 border-emerald-500">Upcoming Impact Events</h3>
@@ -203,7 +203,7 @@ function ImpactEvent({ date, title, location, description }) {
   );
 }
 
-function Users({ className, iconSize }) {
+function UsersIcon({ className, iconSize }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
