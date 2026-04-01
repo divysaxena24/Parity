@@ -128,4 +128,4 @@ Parity maintains a **strict isolation policy** between the administrative workst
 
 ---
 
-© 2026 Parity Technologies. Optimized for absolute golfing performance and global impact.
+© 2026 Parity. Optimized for absolute golfing performance and global impact.
